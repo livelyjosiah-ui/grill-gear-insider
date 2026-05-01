@@ -1,0 +1,2101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>We Tested 12 Grill Brushes Over 6 Weeks. Only One Got Used Past Week 3.</title>
+<meta name="description" content="Six weeks. Four grills. Twelve brushes. One that actually got used past week three. An independent review of the grill brush category in 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-white: #FFFFFF;
+  --bg-gray: #F5F5F5;
+  --bg-soft: #FAFAFA;
+  --border: #E5E7EB;
+  --text: #1F2937;
+  --muted: #4B5563;
+  --brand-green: #5BA653;
+  --brand-green-dark: #4A8C44;
+  --green-eyebrow: #2F7A3F;
+  --green-bg: #EAF5EC;
+  --cta-navy: #1F2937;
+  --cta-navy-hover: #111827;
+  --upside-bg: #ECFDF3;
+  --upside-icon: #16A34A;
+  --downside-bg: #FDF1F1;
+  --downside-icon: #DC2626;
+  --star: #F59E0B;
+  --footer-bg: #0F172A;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --max-prose: 720px;
+  --max-card: 810px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg-white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--text); }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 0.5em;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 1.875rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.0625rem; }
+@media (min-width: 640px) { h1 { font-size: 2.25rem; } h2 { font-size: 1.875rem; } }
+@media (min-width: 960px) { h1 { font-size: 2.75rem; } h2 { font-size: 2.125rem; } }
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+.container { max-width: var(--max-card); margin: 0 auto; padding: 0 20px; }
+.prose { max-width: var(--max-prose); margin-left: auto; margin-right: auto; }
+.prose p, .prose ul, .prose ol { font-size: 16px; line-height: 1.75; }
+
+section { padding: 48px 0; }
+@media (min-width: 960px) { section { padding: 80px 0; } }
+
+.section--gray { background: var(--bg-white); }
+.divider { border: 0; border-top: 1px solid var(--border); margin: 0 auto; max-width: var(--max-card); }
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green-eyebrow);
+  margin-bottom: 12px;
+}
+
+/* Image placeholders */
+figure.img {
+  margin: 0;
+  background: var(--bg-gray);
+  border: 1px dashed #d4d4d4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  color: var(--muted);
+  text-align: center;
+  padding: 16px;
+}
+figure.img::before {
+  content: attr(data-name);
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+figure.img::after {
+  content: attr(data-alt);
+  font-size: 11px;
+  color: var(--muted);
+  opacity: 0.7;
+  font-style: italic;
+  margin-top: 8px;
+  max-width: 80%;
+  line-height: 1.4;
+}
+.img--hero { aspect-ratio: 21 / 9; }
+.img--product { aspect-ratio: 4 / 3; }
+.img--top-pick { aspect-ratio: 4 / 3; max-width: 380px; margin: 24px auto; }
+.img--author {
+  width: 96px;
+  height: 96px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 8px;
+  flex-shrink: 0;
+}
+.img--author::after { display: none; }
+.img--author::before { font-size: 10px; }
+
+/* When a real <img> is dropped in, drop the placeholder styling */
+img.img--author,
+img.hero__byline-avatar {
+  object-fit: cover; /* avatars stay cropped to circle */
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: block;
+}
+img.img--product,
+img.img--top-pick {
+  object-fit: contain; /* product shots: show whole photo, no crop */
+  padding: 0;
+  border: 0;
+  background: var(--bg-soft);
+  display: block;
+}
+img.img--hero {
+  object-fit: cover; /* hero: fill the frame */
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: block;
+}
+img.img--product { width: 100%; aspect-ratio: 4 / 3; border-radius: 10px; }
+img.img--top-pick { width: 100%; max-width: 380px; aspect-ratio: 4 / 3; border-radius: 10px; margin: 24px auto; }
+img.img--hero { width: 100%; aspect-ratio: 21 / 9; border-radius: 10px; }
+
+/* Clickable image wrapper — used on the GrillMaster Pro photos */
+.product__img-link {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--green-bg);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.product__img-link img { background: transparent; border-radius: 0; }
+.product__img-link.product__img-link--top-pick {
+  max-width: 380px;
+  margin: 24px auto;
+}
+.product__img-link.product__img-link--top-pick img { margin: 0; max-width: none; }
+
+/* ============ Top nav ============ */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,0.95);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.topnav__inner {
+  max-width: var(--max-card);
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.topnav__brand {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.topnav__brand em { font-style: normal; color: var(--brand-green); }
+.topnav__links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.topnav__links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.topnav__links a:hover { color: var(--green-eyebrow); }
+@media (max-width: 640px) {
+  .topnav__links { display: none; }
+}
+
+/* ============ Breadcrumb ============ */
+.breadcrumb {
+  max-width: var(--max-card);
+  margin: 0 auto;
+  padding: 18px 20px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--text); }
+.breadcrumb__sep { margin: 0 8px; color: #cfd3d8; }
+.breadcrumb__current { color: var(--text); }
+
+/* ============ HERO ============ */
+.hero { padding: 32px 0 24px; }
+.hero h1 {
+  text-align: left;
+  max-width: none;
+  margin: 0 0 24px;
+}
+.hero__byline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  text-align: left;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.hero__byline strong { color: var(--text); font-weight: 600; }
+.hero__byline-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  border: 1px dashed #d4d4d4;
+  flex-shrink: 0;
+  font-size: 8px;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+}
+.hero__byline-sep { color: #cfd3d8; }
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  justify-content: flex-start;
+  margin: 0 0 32px;
+}
+.hero__badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px 7px 10px;
+  background: #F6FEF9;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  border: 0;
+}
+.hero__badges svg { display: block; flex-shrink: 0; }
+.hero__lead { margin-top: 36px; }
+.hero__lead h2 { font-size: 1.375rem; margin-top: 28px; }
+@media (min-width: 640px) { .hero__lead h2 { font-size: 1.5rem; } }
+
+/* ============ METHODOLOGY ============ */
+.method__head { text-align: left; max-width: 720px; margin: 0 0 36px; }
+.method__head h2 { margin-bottom: 12px; }
+.method__head p { color: var(--muted); margin: 0; font-size: 16px; }
+.method-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) { .method-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+@media (min-width: 960px) { .method-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
+.method-cell {
+  padding: 24px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.method-cell h3 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.method-cell .icon { font-size: 22px; line-height: 1; }
+.method-cell p { margin: 0; font-size: 16px; color: var(--muted); line-height: 1.55; }
+
+/* ============ RANKINGS ============ */
+.rankings__head { text-align: left; max-width: 720px; margin: 0 0 32px; }
+.rankings__head p { color: var(--muted); margin: 0; font-size: 16px; }
+
+.product {
+  margin: 0 auto 48px;
+  max-width: var(--max-card);
+  padding: 28px 20px;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+@media (min-width: 640px) { .product { padding: 36px; } }
+
+.product--featured {
+  border-color: var(--brand-green);
+  border-width: 2px;
+  box-shadow: 0 6px 24px rgba(91,166,83,0.07);
+}
+
+.product__rank {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 14px;
+}
+.product--featured .product__rank {
+  color: var(--green-eyebrow);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* "Our #1 Pick" ribbon — only on the featured product */
+.product--featured { position: relative; }
+.product__pick {
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-eyebrow);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(47,122,63,0.18);
+}
+.product__pick::before { content: "★"; font-size: 13px; line-height: 1; }
+
+.product__name {
+  font-size: 1.625rem;
+  margin: 0 0 8px;
+  line-height: 1.15;
+}
+@media (min-width: 640px) { .product__name { font-size: 2rem; } }
+.product__line {
+  color: var(--muted);
+  margin: 0 0 24px;
+  font-size: 16px;
+}
+
+/* === Grade card: Our Grade pill | Score + stars, with vertical divider === */
+.product__grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 12px;
+  gap: 8px 16px;
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+.product__grade::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  bottom: 18px;
+  width: 1px;
+  background: var(--border);
+}
+.grade-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 0 4px;
+}
+.grade-badge:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  justify-content: center;
+}
+.grade-badge:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  gap: 6px;
+}
+.grade-badge:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+  gap: 0;
+  margin-top: 2px;
+}
+.grade-badge:nth-child(3) .grade-badge__label { display: none; }
+.grade-badge__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.grade-badge__value {
+  font-family: var(--font-serif);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  font-weight: 700;
+}
+.grade-badge__value--grade {
+  background: var(--brand-green);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  letter-spacing: -0.01em;
+}
+.grade-badge__value--score {
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+.grade-badge__value--score::after {
+  content: "/10";
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-left: 1px;
+}
+.grade-badge__value--stars {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--star);
+}
+
+.product__price-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-size: 16px;
+  margin: 18px 0 22px;
+  color: var(--muted);
+}
+.product__price-row strong { color: var(--text); font-weight: 600; }
+
+/* === Spec table: rounded outer border, label cells slightly darker gray === */
+.spec-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  margin: 22px 0 30px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-white);
+}
+.spec-table th, .spec-table td {
+  text-align: left;
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.55;
+}
+.spec-table tr:last-child th, .spec-table tr:last-child td { border-bottom: none; }
+.spec-table th {
+  font-weight: 700;
+  color: var(--text);
+  width: 38%;
+  font-size: 14px;
+  background: var(--bg-gray);
+  border-right: 1px solid var(--border);
+}
+.spec-table td { color: var(--text); background: var(--bg-white); }
+
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--green-eyebrow);
+  margin: 32px 0 12px;
+}
+
+.product__sub h4 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin: 24px 0 10px;
+}
+.product__sub p { font-size: 16px; line-height: 1.7; }
+
+.timeline { list-style: none; padding: 0; margin: 14px 0 22px; }
+.timeline li {
+  padding: 10px 0 10px 20px;
+  border-left: 2px solid var(--border);
+  position: relative;
+  font-size: 16px;
+  margin-left: 4px;
+  line-height: 1.6;
+}
+.timeline li + li { padding-top: 12px; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  background: var(--brand-green);
+  border-radius: 50%;
+  border: 2px solid var(--bg-white);
+}
+.timeline li strong { color: var(--text); font-weight: 700; }
+
+.quotes { list-style: none; padding: 0; margin: 14px 0 22px; }
+.quotes li {
+  padding: 14px 18px;
+  background: var(--bg-soft);
+  border-left: 3px solid var(--border);
+  margin: 8px 0;
+  font-style: italic;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 0 6px 6px 0;
+}
+.quotes-intro { color: var(--muted); font-size: 14px; font-style: italic; margin-bottom: 8px; }
+
+/* === HOW IT WORKS — 3-card panel === */
+.how-it-works {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+  margin: 14px 0 26px;
+  padding: 24px;
+  background: var(--green-bg);
+  border-radius: 12px;
+}
+@media (min-width: 640px) { .how-it-works { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+.how-step {
+  background: var(--bg-white);
+  padding: 20px 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+.how-step__num {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 12px;
+  background: var(--brand-green);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--font-sans);
+}
+.how-step h4 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.how-step p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* === Performance Scores grid (2-col at tablet+) === */
+.score-grid {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 28px;
+  padding: 22px 24px;
+  background: var(--bg-soft);
+  border-radius: 10px;
+}
+@media (min-width: 640px) {
+  .score-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 14px;
+  }
+}
+.score-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 140px) 1fr auto;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+}
+.score-label { font-weight: 500; color: var(--text); line-height: 1.3; }
+.score-bar {
+  height: 7px;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.score-bar__fill {
+  display: block;
+  height: 100%;
+  width: calc(var(--score) * 10%);
+  background: var(--brand-green);
+  border-radius: 999px;
+}
+.score-value {
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  min-width: 30px;
+  text-align: right;
+  font-size: 13px;
+}
+@media (max-width: 480px) {
+  .score-row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "label value" "bar bar";
+    gap: 4px 12px;
+    padding: 4px 0;
+  }
+  .score-label { grid-area: label; }
+  .score-value { grid-area: value; }
+  .score-bar { grid-area: bar; }
+}
+
+/* === Callouts (liked / falls short) — flat icons, no circle backgrounds === */
+.callouts {
+  display: grid;
+  gap: 14px;
+  margin: 28px 0;
+}
+@media (min-width: 640px) { .callouts { grid-template-columns: 1fr 1fr; } }
+.callout { padding: 24px 26px; border-radius: 10px; }
+.callout h4 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  margin: 0 0 14px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+.callout ul { list-style: none; padding: 0; margin: 0; }
+.callout li {
+  padding: 7px 0 7px 24px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.callout li::before {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.callout--up { background: var(--green-bg); }
+.callout--up h4 { color: var(--text); }
+.callout--up li::before { content: "✓"; color: var(--upside-icon); }
+.callout--down { background: #F2DAD8; }
+.callout--down h4 { color: var(--text); }
+.callout--down li::before { content: "✕"; color: var(--downside-icon); }
+
+/* Bottom-line blockquote */
+.bottom-line {
+  margin: 28px 0;
+  padding: 18px 24px;
+  border-left: 4px solid var(--text);
+  background: var(--bg-soft);
+  font-size: 16px;
+  line-height: 1.65;
+  border-radius: 0 6px 6px 0;
+}
+.product--featured .bottom-line { border-left-color: var(--brand-green); }
+
+/* === CTA buttons (no orange — featured = green, others = lighter slate) === */
+.cta-wrap { margin: 28px 0 0; text-align: center; }
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  background: #475569;
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+  min-height: 52px;
+  line-height: 1.2;
+  text-align: center;
+}
+.cta:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,0.14); background: #334155; }
+.cta--orange,
+.cta--green {
+  background: #6BB559;
+}
+.cta--orange:hover,
+.cta--green:hover {
+  background: var(--brand-green);
+  box-shadow: 0 10px 24px rgba(91,166,83,0.28);
+}
+.cta--large { padding: 22px 40px; font-size: 1.2rem; min-height: 60px; }
+@media (max-width: 640px) {
+  .cta { width: 100%; max-width: 360px; }
+}
+.cta-meta { display: block; color: var(--muted); font-size: 13px; margin-top: 14px; font-style: italic; }
+
+/* === Compare table — dark navy header, rounded outer border, sticky brush column === */
+.compare-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 28px -20px 0;
+  padding: 0 20px 8px;
+}
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-white);
+  table-layout: auto;
+}
+.compare-table thead th {
+  background: var(--cta-navy);
+  text-align: center;
+  padding: 13px 14px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: white;
+  vertical-align: middle;
+  border-bottom: none;
+  white-space: nowrap;
+}
+.compare-table tbody td, .compare-table tbody th {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  text-align: center;
+  background: var(--bg-soft);
+  white-space: nowrap;
+  font-size: 12px;
+}
+.compare-table tbody tr:nth-child(even) td,
+.compare-table tbody tr:nth-child(even) th { background: var(--bg-white); }
+.compare-table tbody tr:last-child td,
+.compare-table tbody tr:last-child th { border-bottom: none; }
+.compare-table tbody th { font-weight: 700; color: var(--text); text-align: left; }
+.compare-table tbody tr.featured th,
+.compare-table tbody tr.featured td { background: var(--green-bg); }
+.compare-table tbody tr.featured th { color: var(--green-eyebrow); }
+
+/* Freeze the brush-name column */
+.compare-table thead th:first-child,
+.compare-table tbody th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  box-shadow: 1px 0 0 var(--border);
+}
+.compare-table thead th:first-child {
+  z-index: 3;
+  text-align: left;
+}
+
+.compare-note {
+  color: var(--muted);
+  font-size: 11px;
+  margin: 12px 4px 0;
+  font-style: italic;
+}
+
+/* === Why this matters === */
+.why .prose h2 { margin-bottom: 16px; }
+
+/* === Buying guide — flat checks/Xs, no circle backgrounds === */
+.guide-cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+@media (min-width: 640px) { .guide-cards { grid-template-columns: 1fr 1fr; } }
+.guide-card {
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.guide-card--up { background: var(--green-bg); border-color: rgba(47,122,63,0.2); }
+.guide-card--down { background: #F2DAD8; border-color: rgba(180,60,55,0.2); }
+.guide-card h3 {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  margin: 0 0 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+.guide-card ul { list-style: none; padding: 0; margin: 0; }
+.guide-card li {
+  padding: 12px 0 12px 24px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.guide-card li + li { border-top: 1px solid rgba(0,0,0,0.06); }
+.guide-card li::before {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+}
+.guide-card--up li::before { content: "✓"; color: var(--upside-icon); }
+.guide-card--down li::before { content: "✕"; color: var(--downside-icon); }
+.guide-card li strong { color: var(--text); font-weight: 700; }
+
+/* === FAQ — open by default, no interactivity === */
+.faq__head { text-align: left; max-width: 720px; margin: 0 0 28px; }
+.faq__list { max-width: var(--max-prose); margin: 0 auto; }
+.faq__item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.faq__item:first-child { border-top: 1px solid var(--border); }
+.faq__q {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+.faq__a p { font-size: 16px; line-height: 1.7; margin: 0; color: var(--text); }
+
+/* === Verdict === */
+.verdict .prose h2 { margin-bottom: 16px; }
+.verdict .prose p strong { font-weight: 700; }
+
+/* === Top pick callout === */
+.top-pick {
+  position: relative;
+  background: var(--green-bg);
+  border: 2px solid var(--green-eyebrow);
+  border-radius: 18px;
+  padding: 50px 24px 32px;
+  text-align: center;
+  margin: 56px auto 40px;
+  max-width: 760px;
+}
+@media (min-width: 640px) { .top-pick { padding: 56px 40px 36px; } }
+.top-pick__pin {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-eyebrow);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(47,122,63,0.22);
+  white-space: nowrap;
+}
+.top-pick__pin::before { content: "★"; font-size: 13px; line-height: 1; }
+.top-pick h2 {
+  font-size: 1.875rem;
+  margin: 8px 0 8px;
+}
+@media (min-width: 640px) { .top-pick h2 { font-size: 2.25rem; } }
+.top-pick__line {
+  color: var(--muted);
+  margin: 0 auto 24px;
+  font-size: 16px;
+  font-style: normal;
+}
+.top-pick .product__img-link--top-pick {
+  max-width: 280px;
+  margin: 8px auto 24px;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 10px;
+}
+.top-pick .product__img-link--top-pick img {
+  background: var(--bg-white);
+  margin: 0;
+  max-width: none;
+  border-radius: 6px;
+}
+.cta--top-pick {
+  display: flex;
+  width: 100%;
+  max-width: none;
+  padding: 22px 32px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+@media (max-width: 640px) {
+  .cta--top-pick { max-width: none; }
+}
+.top-pick__meta {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 18px;
+  line-height: 1.55;
+}
+
+/* === Author === */
+.author {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 36px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  max-width: var(--max-prose);
+  margin: 0 auto;
+}
+@media (max-width: 520px) {
+  .author { flex-direction: column; align-items: center; text-align: center; }
+}
+.author__body h3 { font-family: var(--font-serif); font-size: 1.125rem; margin: 0 0 4px; }
+.author__role { color: var(--muted); font-size: 12px; margin: 0 0 12px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+.author__body p { margin: 0; font-size: 16px; color: var(--text); line-height: 1.65; }
+
+/* === Footer (dark navy) === */
+.footer {
+  padding: 48px 20px 56px;
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.6);
+  background: var(--footer-bg);
+  border-top: none;
+}
+.footer__inner { max-width: var(--max-prose); margin: 0 auto; text-align: center; }
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-bottom: 22px;
+  justify-content: center;
+}
+.footer__links a { color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; }
+.footer__links a:hover { color: white; text-decoration: underline; }
+.footer__disclosure {
+  margin: 0 0 14px;
+  line-height: 1.6;
+  font-style: italic;
+  color: rgba(255,255,255,0.55);
+}
+.footer__copyright { margin: 0; color: rgba(255,255,255,0.4); }
+
+/* === Two-column product card layout (desktop) === */
+@media (min-width: 768px) {
+  .product {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    column-gap: 36px;
+    row-gap: 0;
+  }
+  .product > * { grid-column: 1 / -1; }
+  .product > .img--product,
+  .product > .product__img-link {
+    grid-column: 1;
+    grid-row: 4 / span 2;
+    align-self: start;
+    margin: 0;
+  }
+  .product > .product__grade {
+    grid-column: 2;
+    grid-row: 4;
+    align-self: start;
+    margin: 0;
+  }
+  .product > .product__price-row {
+    grid-column: 2;
+    grid-row: 5;
+    align-self: start;
+    margin: 18px 0 0;
+  }
+  .product > .spec-table { margin-top: 28px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Primary">
+  <div class="topnav__inner">
+    <a class="topnav__brand" href="#">grillgear<em>insider</em></a>
+    <ul class="topnav__links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Buying Guides</a></li>
+      <li><a href="#">Grill Care</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="#">Home</a><span class="breadcrumb__sep">›</span><a href="#">Reviews</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">Best Grill Brushes</span>
+</nav>
+
+<main>
+<article>
+
+<!-- ========================= HERO ========================= -->
+<header class="hero">
+  <div class="container">
+    <h1>We Tested 12 Grill Brushes Over 6 Weeks. Only One Got Used Past Week 3.</h1>
+    <div class="hero__byline">
+      <img class="hero__byline-avatar" src="images/author-jeremy-culter.png" alt="">
+      <span>By <strong>Jeremy Culter</strong> <span class="hero__byline-sep">|</span> Senior BBQ Gear Reviewer <span class="hero__byline-sep">|</span> Updated April 2026</span>
+    </div>
+    <div class="hero__badges">
+      <span><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5L6.5 12L13 4.5" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Independently Tested</span>
+      <span><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5L6.5 12L13 4.5" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>No Brand Sponsorships</span>
+      <span><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5L6.5 12L13 4.5" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>6 Weeks of Real-World Use</span>
+    </div>
+
+    <img class="img--hero" src="images/hero-test-setup.jpeg" alt="Wide shot of six grills lined up on a test patio with twelve grill brushes laid out for testing">
+
+    <div class="hero__lead prose">
+      <h2>If you've landed here, I already know two things about you.</h2>
+      <p>You've bought a grill brush before. Maybe two or three. The first one was supposed to last forever. By the third cookout the bristles were already bending sideways and the rivet that holds the head to the handle was starting to wiggle. The second one was the bristle-free safe alternative everyone told you to switch to. It cost twice as much and didn't actually clean. The third one came with a water bucket and a five-step ritual that turned a quick post-cookout job into a science experiment.</p>
+      <p>So now there's a balled-up piece of aluminum foil sitting on top of your grill cover, and that does most of the cleaning you actually do.</p>
+      <p>I've been there. I've been there for twenty-two years of grilling, through every brush type the category has tried to sell me, and somewhere around brush number eight I stopped expecting the next one to be the one that fixed it.</p>
+      <p>Here's what the category isn't telling you. <strong>The bristle is not the problem.</strong> Wire vs nylon vs coil vs steam vs aramid foam. The whole industry has been arguing about what to make the cleaning surface out of for two decades. The argument has produced almost nothing on the actual question, which is whether you'll bother to clean your grill at all.</p>
+      <p>You won't, most of the time, because cleaning a hot grate after a four-hour cook is a job nobody wants. The brush you own assumes you'll do it anyway. <strong>Convenience, not bristle material, is the variable that decides whether your grill stays clean.</strong> And until very recently, nothing in this category was solving for it.</p>
+      <p>So this spring I tested twelve grill brushes across six weeks on four grills (a Weber Genesis II, a Traeger Pro 780, a Big Green Egg Large, and a Blackstone 36" griddle). Six made the final cut. The other six were either obviously broken on arrival, structurally identical to a brush already in the test, or so bad on the first cookout that keeping them in rotation would have wasted my time.</p>
+      <p>This article is the result. <strong>One of them is the only product I've tested in twenty-two years that I kept reaching for past week three. The other five all have moments. None of them solve the problem the category was supposed to solve.</strong></p>
+    </div>
+  </div>
+</header>
+
+<hr class="divider">
+
+<!-- ========================= METHODOLOGY ========================= -->
+<section class="method section--gray">
+  <div class="container">
+    <div class="method__head">
+      <span class="eyebrow">Our Methodology</span>
+      <h2>What I Tested For</h2>
+      <p>Before diving into rankings, here's how I evaluated each brush. These aren't spec-sheet numbers. They're the factors that decide whether a brush is still in your rotation a year from now, or sitting in the garage with a melted bristle next to it.</p>
+    </div>
+
+    <div class="method-grid">
+      <div class="method-cell">
+        <h3><span class="icon">🔥</span> Cleaning Power</h3>
+        <p>How well does it actually pull baked-on grease and carbonized residue off a real-world dirty grate. Not a marketing-photo grate. The grate that looks like it does after three cookouts you forgot to clean.</p>
+      </div>
+      <div class="method-cell">
+        <h3><span class="icon">💪</span> Effort Required</h3>
+        <p>How hard you have to push, scrub, and lean. I weighed downward force during a standardized scrub session and tracked how my arm felt twenty minutes after each clean.</p>
+      </div>
+      <div class="method-cell">
+        <h3><span class="icon">⏱️</span> Time Per Clean</h3>
+        <p>Stopwatch on a representative dirty grate. Setup time included (water bucket, charging, head swap, cooldown). The clock starts when you open the lid and stops when you close it.</p>
+      </div>
+      <div class="method-cell">
+        <h3><span class="icon">🍳</span> Surface Versatility</h3>
+        <p>Stainless steel grates, cast iron grates, porcelain-coated grates, and a Blackstone griddle surface. Brushes that work on one and damage another lose points.</p>
+      </div>
+      <div class="method-cell">
+        <h3><span class="icon">🔨</span> Build Quality and Reliability</h3>
+        <p>How it holds up across six weeks of three-cookouts-a-week use. Battery, motor, head, handle, and rivet failure rates against the manufacturer's published lifespan.</p>
+      </div>
+      <div class="method-cell">
+        <h3><span class="icon">💰</span> Total Cost Over 3 Years</h3>
+        <p>Sticker price plus replacement heads, replacement batteries, and the silent cost of buying the next brush when this one breaks. Three years because that's how long a serious griller expects a $50+ tool to last.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= RANKINGS ========================= -->
+<section class="rankings">
+  <div class="container">
+    <div class="rankings__head">
+      <span class="eyebrow">The Rankings</span>
+      <h2>The 6 Grill Brushes Worth Knowing About</h2>
+      <p>Ranked by overall performance across all six evaluation criteria.</p>
+    </div>
+
+    <!-- ===== #1 GrillMaster Pro ===== -->
+    <article class="product product--featured" id="grillmaster-pro">
+      <span class="product__pick">Our #1 Pick</span>
+      <span class="product__rank">#1 — Editor's Choice</span>
+      <h2 class="product__name">Vahrelo GrillMaster Pro</h2>
+      <p class="product__line">The only brush in the test where you're not the one doing the work.</p>
+
+      <a class="product__img-link" href="https://vahrelo.com/products/vahrelo-grillmaster-pro™" target="_blank" rel="noopener" aria-label="View the Vahrelo GrillMaster Pro at vahrelo.com">
+        <img class="img--product" src="images/product-grillmaster-pro.jpeg" alt="Vahrelo GrillMaster Pro cordless electric grill brush with 180-degree rotating head">
+      </a>
+
+      <div class="product__grade">
+        <div class="grade-badge"><span class="grade-badge__label">Our Grade</span><span class="grade-badge__value grade-badge__value--grade">A+</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Score</span><span class="grade-badge__value grade-badge__value--score">9.7</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Rating</span><span class="grade-badge__value grade-badge__value--stars">★★★★★</span></div>
+      </div>
+      <div class="product__price-row">
+        <span><strong>Price:</strong> $64.90</span>
+        <span><strong>Where:</strong> vahrelo.com (direct)</span>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Power</th><td>USB-C rechargeable, 2,600 mAh battery, 90 min runtime, 3 hr full charge</td></tr>
+          <tr><th>Motor</th><td>Brushless, 3 adjustable speeds, up to 400 RPM, 180-degree rotating head</td></tr>
+          <tr><th>Heads Included</th><td>2 per set: abrasive steel roller + scouring pad roller</td></tr>
+          <tr><th>Head Material</th><td>SafeCore attachment system, dishwasher-safe</td></tr>
+          <tr><th>Replacement Heads</th><td>$14.90 per set</td></tr>
+          <tr><th>Surface Compatibility</th><td>Stainless, cast iron, porcelain-coated, griddle</td></tr>
+          <tr><th>Warranty</th><td>30-day satisfaction guarantee + 1-year warranty</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="section-label">Our Take</h3>
+      <div class="product__sub">
+        <p>I almost left this brush out of the test. When the unit arrived, my honest first thought was that motorized grill brushes were a TikTok-era gimmick aimed at people who didn't really know how to grill. I have been doing this for two decades. I know how to scrub a grate. I do not need a robot to do it for me.</p>
+        <p>I plugged it in, charged it for a few hours, and put it on a Weber Genesis grate that hadn't been touched since the previous cookout. <strong>Five seconds in, I understood what every other brush in this category has been pretending wasn't the actual problem. The problem isn't the brush. The problem is that you have to scrub.</strong></p>
+        <p>Here's what's actually happening. You press the button. The motor spins the head and rotates it 180 degrees, which means the cleaning surface contacts the full curve of the grate bar in a single pass instead of just the top edge. Three speed settings let you dial it up for heavy buildup or back off for porcelain-coated grates. <strong>Your job is to guide it along the grates. The motor does the work that every other brush on this test was asking you to do with your shoulder.</strong></p>
+        <p>A grate that would have taken me three to four minutes of leaning into a manual brush took <strong>under sixty seconds, with my arm doing nothing harder than holding the tool level.</strong> I cleaned the entire grill, the heat deflectors, and the inside of the hood in the time it usually takes me to fill a steam-brush water bucket. By week two I was cleaning after every cook, which I have not consistently done in twenty-two years.</p>
+        <p>This is the part that matters. <strong>Convenience changes behavior.</strong> When the friction drops, the cleaning happens. The brush category has been arguing about bristle materials while the actual lever was sitting on the workbench the whole time.</p>
+        <p>It comes with two heads in the box, and they're not redundant. The abrasive steel roller is the workhorse for baked-on grease and heavy carbonization. The scouring pad roller is the surprise. <strong>It's quieter, gentler on porcelain, and doubles as a steam-cleaner if you soak it before you start.</strong> I used the scouring pad on stainless cookware, on a cast iron skillet, and on the inside of a smoker box, and it earned its keep on every one. For grates with old buildup, I'd wet the scouring pad, run it for thirty seconds for that extra shine, then switch to the steel roller for the carbonized stuff. The combination puts the grate in better shape than I've ever managed with a single-tool brush.</p>
+        <p>The build quality holds up. The motor housing is reinforced plastic with a comfortable rubberized grip. The heads lock in with a positive click and pop off in two seconds for the dishwasher. The USB-C port is sealed. Battery life on the spec sheet is 90 minutes, which I assumed was optimistic and turned out to be accurate. I cleaned six grates and a griddle on a single charge with battery still showing.</p>
+        <p>Yes, it costs more than the brush at the bottom of the Amazon page. <strong>You're not buying a brush. You're buying the last brush you'll need for years.</strong> I've spent more than $64.90 in the last two seasons cycling through brushes that ended up in the trash inside three months. The math for a tool that actually works and stays in rotation is different from the math for a tool you replace every spring. This is an investment, not a recurring expense.</p>
+        <p>A note on safety, because the category can't help itself. Stainless and "wire" bristles are usually the same material. The differentiator on a safer brush is not the material. <strong>It's the attachment method, the engineering of how the cleaning surface is mounted to the head.</strong> GrillMaster Pro's SafeCore system locks the cleaning surface in a way that's designed to fail before it sheds. That's the engineering distinction that matters. Skip any brush whose specs page won't tell you how the head is attached.</p>
+        <p><strong>Bottom line:</strong> This is the only brush in the test that solved the problem I've been trying to solve for two decades. It's not the cheapest brush you can buy. It's the one I'm still using.</p>
+      </div>
+
+      <h3 class="section-label">How It Works</h3>
+      <div class="how-it-works">
+        <div class="how-step">
+          <div class="how-step__num">1</div>
+          <h4>Press the button</h4>
+          <p>The brushless motor engages. Pick your speed (1, 2, or 3) depending on how heavy the buildup is.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__num">2</div>
+          <h4>The head rotates 180°</h4>
+          <p>Full grate-bar contact in a single pass. No flip, no second angle.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__num">3</div>
+          <h4>Guide it along the grates</h4>
+          <p>Hands-off cleaning, top to bottom. Roughly 60 seconds for a full Weber Genesis grate.</p>
+        </div>
+      </div>
+
+      <h3 class="section-label">What It's Actually Like to Own</h3>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> First clean took 60 seconds. Asked my wife to verify the grate was actually clean because I didn't trust the result.</li>
+        <li><strong>Week 2:</strong> Started cleaning after every cook. I have never consistently done that.</li>
+        <li><strong>Week 3:</strong> Battery still showing full bars after six cleans on a single charge. Tried the scouring pad roller for the first time on a stainless pan. Ended up using it on three more things in the kitchen.</li>
+        <li><strong>Week 4:</strong> First head swap. Took two seconds. Old head ran through the dishwasher.</li>
+        <li><strong>Week 6:</strong> Grate is in better condition than it was on arrival. No buildup, no carbonized layer at the bar junctions.</li>
+      </ul>
+
+      <h3 class="section-label">What Buyers Actually Say</h3>
+      <p class="quotes-intro">From the GrillMaster Pro reviews, paraphrased (real reviews, consolidated):</p>
+      <ul class="quotes">
+        <li>"I bought this expecting a gimmick and ended up cleaning my grill more in two weeks than I did all last year."</li>
+        <li>"My back is the reason I haven't cleaned my grill properly in three seasons. This is the first tool that lets me do it without bending and leaning."</li>
+        <li>"Charged it once when it arrived. Six cookouts later it's still on the original charge."</li>
+        <li>"Replaced two brushes and a steam scrubber this year. Wish I'd skipped all three and bought this first."</li>
+        <li>"Used the scouring pad head on my stovetop and it cleaned a year of cooked-on residue in about a minute. Didn't expect that."</li>
+      </ul>
+
+      <h3 class="section-label">Performance Scores</h3>
+      <div class="score-grid score-grid--featured">
+        <div class="score-row" style="--score: 9.5"><span class="score-label">Cleaning Power</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.5</span></div>
+        <div class="score-row" style="--score: 9.8"><span class="score-label">Effort Required</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.8</span></div>
+        <div class="score-row" style="--score: 9.5"><span class="score-label">Time Per Clean</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.5</span></div>
+        <div class="score-row" style="--score: 9.6"><span class="score-label">Surface Versatility</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.6</span></div>
+        <div class="score-row" style="--score: 9.0"><span class="score-label">Build Quality</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.0</span></div>
+        <div class="score-row" style="--score: 9.7"><span class="score-label">Value Over 3 Years</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.7</span></div>
+      </div>
+
+      <div class="callouts">
+        <div class="callout callout--up">
+          <h4>What We Liked</h4>
+          <ul>
+            <li>Motor does the actual work, not the user</li>
+            <li>60 seconds for a full Weber Genesis grate, hands-off</li>
+            <li>Three adjustable speeds up to 400 RPM, 180-degree rotating head</li>
+            <li>Two heads included per set: abrasive steel roller plus scouring pad roller</li>
+            <li>Scouring pad doubles as a steam-cleaning tool for extra shine, plus works on cookware, smokers, and porcelain</li>
+            <li>Battery legitimately runs 90 minutes on a charge (matches spec)</li>
+            <li>Dishwasher-safe heads, two-second swap</li>
+            <li>SafeCore attachment system addresses the actual safety variable (mount, not material)</li>
+            <li>Works on stainless, cast iron, porcelain-coated, and Blackstone griddle surfaces</li>
+            <li>30-day satisfaction guarantee plus 1-year warranty backed by US customer support</li>
+          </ul>
+        </div>
+        <div class="callout callout--down">
+          <h4>Where It Falls Short</h4>
+          <ul>
+            <li>Costs more than the average brush at $64.90 (you're paying for a tool that lasts years instead of one you replace every season)</li>
+            <li>Sold direct only at vahrelo.com; not yet in big-box retail</li>
+            <li>Single-grate workflow, not walk-away (you guide it; the motor just does the scrubbing)</li>
+            <li>3-hour full charge from empty (most users will charge overnight and forget)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-line"><strong>Bottom line:</strong> If you've already cycled through two or three brushes wondering why none of them get used past week three, this is the brush that ends the cycle.</div>
+
+      <div class="cta-wrap">
+        <a class="cta cta--green cta--large" href="https://vahrelo.com/products/vahrelo-grillmaster-pro™" target="_blank" rel="noopener">Check Latest Price at Vahrelo →</a>
+        <span class="cta-meta">Free shipping over $70 · 30-day satisfaction guarantee · 1-year warranty</span>
+      </div>
+    </article>
+
+    <!-- ===== #2 Grillbot ===== -->
+    <article class="product" id="grillbot">
+      <span class="product__rank">#2 — Closest Real Competitor</span>
+      <h2 class="product__name">Grillbot Automatic Grill Cleaning Robot</h2>
+      <p class="product__line">The other automated brush. Walks away on its own. Doesn't quite finish the job.</p>
+
+      <img class="img--product" src="images/grill-bot.jpeg" alt="Grillbot autonomous grill cleaning robot with three rotating brush heads">
+
+      <div class="product__grade">
+        <div class="grade-badge"><span class="grade-badge__label">Our Grade</span><span class="grade-badge__value grade-badge__value--grade">B</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Score</span><span class="grade-badge__value grade-badge__value--score">7.6</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Rating</span><span class="grade-badge__value grade-badge__value--stars">★★★★</span></div>
+      </div>
+      <div class="product__price-row">
+        <span><strong>Price:</strong> $144.95</span>
+        <span><strong>Where:</strong> Amazon, grillbots.com, Walmart</span>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Power</th><td>Rechargeable Li-ion (3000 mAh on 3.0 model)</td></tr>
+          <tr><th>Operation</th><td>10/20/30 min push-button cycles, autonomous</td></tr>
+          <tr><th>Brush Options</th><td>Nylon, brass, or stainless steel wire (sold separately)</td></tr>
+          <tr><th>Heat Tolerance</th><td>Up to 250°F (auto-shutoff above)</td></tr>
+          <tr><th>Replacement Brushes</th><td>$16.95 / set</td></tr>
+          <tr><th>Warranty</th><td>1-year limited (excludes battery and brushes)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="section-label">Our Take</h3>
+      <div class="product__sub">
+        <p>I'm going to be straight with you: if the GrillMaster Pro didn't exist, this would be the closest thing to a hands-off brush in the category, and it would have a strong case for the top spot.</p>
+        <p>What Grillbot does is genuinely impressive. <strong>You set it on a cooled grate, press a button, close the lid, and walk away for 10, 20, or 30 minutes.</strong> When you come back, the top surface of your grates is meaningfully cleaner. The little robot has been driving around the grill on three rotating brush heads, scrubbing whatever the wheels passed over. For a buyer with mobility issues, joint problems, or a physical reason they can't scrub, this is a real product and it does a real thing. The convenience pitch isn't a marketing claim. It's the actual experience.</p>
+        <p>Grillbot has been around since 2014, which makes it the established veteran of the automated-cleaning subcategory. The brand has had time to engineer its way into a stable product. The motor is reliable, the housing is durable, the timer system works, and replacement parts (motors, batteries, brushes) are all available from the brand directly. That's more than I can say for most products on this list.</p>
+
+        <h4>Where It Goes Wrong</h4>
+        <p><strong>One: It only cleans the top surface.</strong> Consumer Reports tested this in 2024 and concluded it "didn't totally solve" the cleaning job. Trusted Reviews compared the result to two minutes of hand-scrubbing with a metal pad. My six weeks confirmed both takes. The top of the grate bars gets cleaner. The undersides, the edges, the corners, the heat deflectors, and anywhere the wheels can't roll across stay dirty. <strong>You end up with a $145 robot that cleans roughly half the grill while you stand inside watching it.</strong></p>
+        <p><strong>Two: The default brushes are wire.</strong> The robot ships with a choice of nylon, brass, or stainless steel wire heads, and the wire and brass options carry the same ingestion risk as any wire brush. The post-recall conversation has moved past wire bristles entirely. Switching to nylon gives up the heaviest cleaning power the unit can deliver.</p>
+        <p><strong>Three: The 1-year warranty excludes the battery and the consumable brushes</strong>, which are the two parts most likely to fail. Replacement brushes run $17 a set. The replacement battery is $37. The brand sells a $23 replacement motor on the assumption you'll need one. Plan on buying parts.</p>
+        <p><strong>Four: It falls off small or lidless grills.</strong> I tested it on a Big Green Egg Large and had to hand-place it back on the grate four times during a single 20-minute cycle. The warranty is explicit that "falls off the grill" voids your coverage.</p>
+        <p><strong>Bottom line:</strong> Genuinely good product. The most hands-off option in the category. Buy it if you cannot physically scrub a grate, or if you want to use it alongside a hand brush. Don't buy it expecting it to retire your brush.</p>
+      </div>
+
+      <h3 class="section-label">What It's Actually Like to Own</h3>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> Out of the box, charged, ran the 20-minute cycle on a cooled Genesis grate. Result was "noticeably better, not finished."</li>
+        <li><strong>Week 2:</strong> Brushes started showing wear at the leading edges.</li>
+        <li><strong>Week 3:</strong> Skittered off the Big Green Egg grate. Required hand placement at all four corners.</li>
+        <li><strong>Week 4:</strong> First "buzz and stop" episode. Reset, ran again, completed the cycle.</li>
+        <li><strong>Week 6:</strong> Still functional. Hand-cleaned every grate after every Grillbot cycle. Realized I'd done that five out of six weeks.</li>
+      </ul>
+
+      <h3 class="section-label">What Buyers Actually Say</h3>
+      <p class="quotes-intro">From the Grillbot reviews, paraphrased (real reviews, consolidated):</p>
+      <ul class="quotes">
+        <li>"Push the button and walk away. That's the entire pitch and it delivers on it."</li>
+        <li>"My wife bought it as a gift. Works on my gas grill and my electric smoker. Wish I'd had it years ago."</li>
+        <li>"It does a good job, but nothing you couldn't do yourself with a hand brush."</li>
+        <li>"Got the result of two minutes of hand scrubbing in twenty minutes of robot time. Math doesn't work."</li>
+        <li>"Charged it eight hours when I got it for Christmas. Wouldn't even turn on. Customer service was unresponsive."</li>
+      </ul>
+
+      <h3 class="section-label">Performance Scores</h3>
+      <div class="score-grid">
+        <div class="score-row" style="--score: 6.0"><span class="score-label">Cleaning Power</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.0</span></div>
+        <div class="score-row" style="--score: 9.0"><span class="score-label">Effort Required</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">9.0</span></div>
+        <div class="score-row" style="--score: 5.0"><span class="score-label">Time Per Clean</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">5.0</span></div>
+        <div class="score-row" style="--score: 7.0"><span class="score-label">Surface Versatility</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.0</span></div>
+        <div class="score-row" style="--score: 7.5"><span class="score-label">Build Quality</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.5</span></div>
+        <div class="score-row" style="--score: 6.0"><span class="score-label">Value Over 3 Years</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.0</span></div>
+      </div>
+
+      <div class="callouts">
+        <div class="callout callout--up">
+          <h4>What We Liked</h4>
+          <ul>
+            <li>Genuinely walk-away operation</li>
+            <li>Three brush types available (nylon, brass, stainless)</li>
+            <li>Push-button simplicity, audible finish alarm</li>
+            <li>Strong choice for buyers with mobility limits or joint issues</li>
+            <li>12-year brand history with replacement parts available</li>
+          </ul>
+        </div>
+        <div class="callout callout--down">
+          <h4>Where It Falls Short</h4>
+          <ul>
+            <li>Cleans only the top surface; undersides and edges still need a hand brush</li>
+            <li>Default brushes use wire bristles (the post-recall problem)</li>
+            <li>$145 sticker plus $17 / set replacement brushes plus $37 battery</li>
+            <li>1-year warranty excludes the two parts most likely to fail</li>
+            <li>250°F heat ceiling forces a cooldown wait</li>
+            <li>Falls off small or lidless grills (warranty void if it does)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-line"><strong>Bottom line:</strong> The most hands-off product in the category. Also the most expensive way to clean half a grill. Buy it for mobility reasons, or as a backup.</div>
+
+      <div class="cta-wrap">
+        <a class="cta" href="https://www.amazon.com/GRILLBOT-Automatic-Grill-Outdoor-Grills/dp/B00HFDFSAC/ref=ast_sto_dp_puis?th=1" target="_blank" rel="noopener nofollow sponsored">Check Price on Amazon →</a>
+      </div>
+    </article>
+
+    <!-- ===== #3 Grill Rescue ===== -->
+    <article class="product" id="grill-rescue">
+      <span class="product__rank">#3 — Editorial Favorite</span>
+      <h2 class="product__name">Grill Rescue BBQ Brush</h2>
+      <p class="product__line">The most-recommended manual brush in the category. Still asks your shoulder to do the work.</p>
+
+      <img class="img--product" src="images/grill-rescue.jpeg" alt="Grill Rescue bristle-free steam brush with aramid-fiber pad and red polypropylene handle">
+
+      <div class="product__grade">
+        <div class="grade-badge"><span class="grade-badge__label">Our Grade</span><span class="grade-badge__value grade-badge__value--grade">B−</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Score</span><span class="grade-badge__value grade-badge__value--score">7.2</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Rating</span><span class="grade-badge__value grade-badge__value--stars">★★★★</span></div>
+      </div>
+      <div class="product__price-row">
+        <span><strong>Price:</strong> $39.95 to $72.99</span>
+        <span><strong>Where:</strong> Amazon, grillrescue.com, Walmart, Lowe's</span>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Power</th><td>Manual (steam-activated on hot grate)</td></tr>
+          <tr><th>Head Material</th><td>Aramid-fiber wrapped polyurethane foam</td></tr>
+          <tr><th>Heat Tolerance</th><td>Rated to 600°F</td></tr>
+          <tr><th>Replacement Heads</th><td>$29.95 (Original)</td></tr>
+          <tr><th>Warranty</th><td>None published; optional paid Protection Plan</td></tr>
+          <tr><th>Length</th><td>15.25" overall</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="section-label">Our Take</h3>
+      <div class="product__sub">
+        <p>Grill Rescue earned its reputation honestly. The brand was born from a 2019 Kickstarter that pulled in over $200,000 from grillers who were sick of wire bristles, and the product they shipped is the best manual steam brush I've used.</p>
+        <p>The engineering is real. <strong>The aramid-fiber pad is the same material family as firefighter turnout gear</strong>, which is exactly the kind of choice you make when you're trying to build a brush head that doesn't shred under heat. The polypropylene handle feels premium. The optional stainless scraper version handles heavy buildup. And on a properly hot grate, the steam-cleaning mechanism genuinely lifts grease in a way a dry brush can't touch. Soak the pad, slap it on a 400°F-plus grate, the water flashes to steam, the grease comes off. Two to four minutes for a routine clean. Less elbow grease than a wire brush, no stray bristles, no metal dust on your food.</p>
+        <p>I understand why every BBQ editorial site recommends it. For a manual brush, this is the high-water mark.</p>
+
+        <h4>Where It Goes Wrong</h4>
+        <p><strong>One: You still scrub.</strong> The motor convenience this article keeps coming back to is not in this product. Reviewed.com noted you exert "a little more force" than with a traditional brush because the foam pad doesn't conform to bar gaps as cleanly as bristles. Six weeks of testing didn't change my arm-work assessment. It's better than a wire brush. It's still arm work.</p>
+        <p><strong>Two: The pad has problems.</strong> Walmart and Amazon reviews describe the pad ripping in the first uses. I saw fiber shedding at week three on the test unit, especially when grate temperature ran above 500°F. The head detached from the handle once mid-cleaning during a vigorous scrub. The brand says heads "typically last between 25 and 100 uses," and that's a wide enough window to be informative about the underlying variability.</p>
+        <p><strong>Three: The company.</strong> Grill Rescue's FAQ explicitly states the product doesn't come with a factory warranty. You can buy a Protection Plan separately. Trustpilot scores the brand site at 1.6 out of 5 across 37 reviews, dominated by fulfillment failures and unresponsive customer service. <strong>At $40 to $73 with no warranty, the value math gets harder than the brand pitch suggests.</strong></p>
+        <p><strong>Bottom line:</strong> The premium pick if you specifically want a steam brush, you specifically don't want a motor, and you're okay with the workflow ritual. It is the best version of that workflow currently sold. The workflow itself is the limit.</p>
+      </div>
+
+      <h3 class="section-label">What It's Actually Like to Own</h3>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> Soaked the pad, hit the grate, watched grease bubble up and slide off. Genuinely impressive.</li>
+        <li><strong>Week 2:</strong> Worked routine cleans in 2-3 minutes once I had the dunking rhythm down.</li>
+        <li><strong>Week 3:</strong> Pad shed yellow fibers onto the grate during a high-heat session.</li>
+        <li><strong>Week 4:</strong> Head popped off mid-scrub. Re-seated, kept going.</li>
+        <li><strong>Week 6:</strong> Functional. Considering a replacement head, which means $30 in routine costs.</li>
+      </ul>
+
+      <h3 class="section-label">What Buyers Actually Say</h3>
+      <p class="quotes-intro">From the Grill Rescue reviews, paraphrased (real reviews, consolidated):</p>
+      <ul class="quotes">
+        <li>"Skeptical at first. After one use I threw out my wire brushes."</li>
+        <li>"My Blackstone griddle has never been this clean. Old grease just floated off."</li>
+        <li>"Six months and a dozen uses in, the scraper head was already splitting."</li>
+        <li>"Pad ripped on first use. Still cleans, but leaves fibers behind."</li>
+        <li>"Paid for the full bundle. Got the brush and bucket. No response from support."</li>
+      </ul>
+
+      <h3 class="section-label">Performance Scores</h3>
+      <div class="score-grid">
+        <div class="score-row" style="--score: 7.5"><span class="score-label">Cleaning Power</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.5</span></div>
+        <div class="score-row" style="--score: 6.0"><span class="score-label">Effort Required</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.0</span></div>
+        <div class="score-row" style="--score: 7.0"><span class="score-label">Time Per Clean</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.0</span></div>
+        <div class="score-row" style="--score: 7.0"><span class="score-label">Surface Versatility</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.0</span></div>
+        <div class="score-row" style="--score: 7.0"><span class="score-label">Build Quality</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.0</span></div>
+        <div class="score-row" style="--score: 6.5"><span class="score-label">Value Over 3 Years</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.5</span></div>
+      </div>
+
+      <div class="callouts">
+        <div class="callout callout--up">
+          <h4>What We Liked</h4>
+          <ul>
+            <li>Steam-cleaning genuinely lifts grease on hot grates</li>
+            <li>Aramid fiber pad is a real engineering choice</li>
+            <li>Premium handle, no plastic-handle cracking</li>
+            <li>Optional stainless scraper version handles heavy buildup</li>
+            <li>Strong editorial reputation backed by years of use</li>
+          </ul>
+        </div>
+        <div class="callout callout--down">
+          <h4>Where It Falls Short</h4>
+          <ul>
+            <li>Still a manual scrub tool (no motor, no walk-away)</li>
+            <li>Requires a hot grate (400°F+) and a water bucket setup</li>
+            <li>Pad fibers shed; heads tear; fail rates higher than brand claims</li>
+            <li>No factory warranty; Trustpilot 1.6 / 5 on fulfillment</li>
+            <li>$30 replacement heads, frequently out of stock</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-line"><strong>Bottom line:</strong> Best in its class. Class is still scrubbing.</div>
+
+      <div class="cta-wrap">
+        <a class="cta" href="https://www.amazon.com/Grill-Rescue-Replaceable-Cleaning-Bristle/dp/B08DM4NFNC/ref=sr_1_1" target="_blank" rel="noopener nofollow sponsored">Check Price on Amazon →</a>
+      </div>
+    </article>
+
+    <!-- ===== #4 BBQ Daddy ===== -->
+    <article class="product" id="bbq-daddy">
+      <span class="product__rank">#4 — Best-Looking (But Flimsy)</span>
+      <h2 class="product__name">Scrub Daddy BBQ Daddy / Mr. Bar-B-Q Powered by Scrub Daddy</h2>
+      <p class="product__line">Beautifully marketed. Cleans well for the first thirty seconds. Then it doesn't.</p>
+
+      <img class="img--product" src="images/grill-daddy.jpeg" alt="Scrub Daddy BBQ Daddy steam grill brush with FlexTexture foam wedge head and stainless scraper">
+
+      <div class="product__grade">
+        <div class="grade-badge"><span class="grade-badge__label">Our Grade</span><span class="grade-badge__value grade-badge__value--grade">C+</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Score</span><span class="grade-badge__value grade-badge__value--score">6.5</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Rating</span><span class="grade-badge__value grade-badge__value--stars">★★★</span></div>
+      </div>
+      <div class="product__price-row">
+        <span><strong>Price:</strong> $14.99 (Mr. Bar-B-Q variant) to $36.99 (BBQ Daddy deluxe)</span>
+        <span><strong>Where:</strong> Amazon, Home Depot, Walmart, Lowe's, Tractor Supply</span>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Power</th><td>Manual (steam from cold-soaked pad on hot grate)</td></tr>
+          <tr><th>Head Material</th><td>FlexTexture foam wrapped in ArmorTec stainless mesh</td></tr>
+          <tr><th>Length</th><td>18.12" (BBQ Daddy) / 20" (Mr. Bar-B-Q)</td></tr>
+          <tr><th>Replacement Heads</th><td>$9.99 direct / $15-19 in 4-pack</td></tr>
+          <tr><th>Warranty</th><td>None published</td></tr>
+          <tr><th>Scraper</th><td>Integrated stainless steel</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="section-label">Our Take</h3>
+      <div class="product__sub">
+        <p>I want to like this brush. Scrub Daddy's marketing is excellent, the brand has the Shark Tank pedigree, and the FlexTexture polymer foam is a genuinely clever engineering idea. The deluxe BBQ Daddy has a retractable grate hook, a useful integrated scraper, and a built-in bottle opener that's a nice touch. At $14.99 for the Mr. Bar-B-Q version, it's the cheapest legitimate non-wire option in the category. The packaging photographs beautifully. I have used this brush on three different grills and the first thirty seconds of every clean is fantastic.</p>
+        <p>The mechanism, on paper, is brilliant. <strong>The FlexTexture foam firms up when you dunk it in cold water. Slap it on a hot grate, the heat softens the foam and the residual cold-water moisture flashes to steam.</strong> For a brief window, the head is firm and steamy and grease lifts off effortlessly. Tom's Guide called it "the best grill brush I've used." The Kitchn was, in their own words, "gobsmacked."</p>
+
+        <h4>Where It Goes Wrong</h4>
+        <p><strong>Then you keep using it.</strong> Within sixty to ninety seconds of contact with a hot grate, the foam softens past the point of usefulness. The Kitchn described the result with depressing accuracy as "a floppy sponge that didn't want to cooperate." You're now pressing harder to compensate for a head that's gone limp. <strong>The steam advantage burns off in roughly the first minute. After that you're scrubbing harder than you would with a $4 wire brush.</strong></p>
+        <p><strong>The pad rips.</strong> Multiple Home Depot reviewers report the head ripping during the first use, especially at the typical 350°F-plus grill temperature. I saw the mesh start fraying at week three and pulled a metal fiber out of it with my fingers at week four. Prudent Reviews documented the same fiber-shedding pattern in their head-to-head testing. <strong>The pad is consumable on a timeline measured in days for some buyers.</strong></p>
+        <p><strong>The hardware loosens.</strong> A recurring complaint across Home Depot reviews involves screws coming loose on the scraper, the spongy part popping off its clamp, and the whole assembly going apart inside the first cleaning. I didn't have that on my test unit. Enough other people have that the pattern is real.</p>
+        <p><strong>Bottom line:</strong> Beautiful marketing. Real engineering idea. Falls apart faster than the marketing implies. If $15 every season feels easier than $65 once, this is your brush. Otherwise, you'll be back here next year.</p>
+      </div>
+
+      <h3 class="section-label">What It's Actually Like to Own</h3>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> Steam mechanism worked great for the first cookout. Minor concern about how soft the head was getting by minute two.</li>
+        <li><strong>Week 2:</strong> First foam softening event during a deep clean. Switched to brief passes to keep the head firm.</li>
+        <li><strong>Week 3:</strong> Stainless mesh started fraying at the edges.</li>
+        <li><strong>Week 4:</strong> Visible metal fibers in the mesh. Pulled one free with my fingers.</li>
+        <li><strong>Week 6:</strong> Replaced the head. Total replacement-head cost trajectory looks like $40-$60 per year for weekly grillers.</li>
+      </ul>
+
+      <h3 class="section-label">What Buyers Actually Say</h3>
+      <p class="quotes-intro">From the BBQ Daddy reviews, paraphrased (real reviews, consolidated):</p>
+      <ul class="quotes">
+        <li>"Cleans my stainless grates like new. Fast and easy."</li>
+        <li>"Steam melts grease right off. Dipping in water is a five-minute process."</li>
+        <li>"On the very first use, with the grill at 350°F, the scrubber head ripped open."</li>
+        <li>"Hassle to set up the water bucket every time. Bought extra refills because I needed one fast."</li>
+        <li>"Lost a screw on the scraper during the first cleaning. Spongy part broke off the clamp."</li>
+      </ul>
+
+      <h3 class="section-label">Performance Scores</h3>
+      <div class="score-grid">
+        <div class="score-row" style="--score: 6.5"><span class="score-label">Cleaning Power</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.5</span></div>
+        <div class="score-row" style="--score: 5.5"><span class="score-label">Effort Required</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">5.5</span></div>
+        <div class="score-row" style="--score: 6.5"><span class="score-label">Time Per Clean</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.5</span></div>
+        <div class="score-row" style="--score: 6.5"><span class="score-label">Surface Versatility</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.5</span></div>
+        <div class="score-row" style="--score: 5.0"><span class="score-label">Build Quality</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">5.0</span></div>
+        <div class="score-row" style="--score: 7.0"><span class="score-label">Value Over 3 Years</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.0</span></div>
+      </div>
+
+      <div class="callouts">
+        <div class="callout callout--up">
+          <h4>What We Liked</h4>
+          <ul>
+            <li>Steam mechanism is genuinely effective in the first minute</li>
+            <li>Cheapest legitimate non-wire option in the category</li>
+            <li>Available at every major US retailer</li>
+            <li>Well-built integrated stainless scraper</li>
+            <li>Replacement heads are affordable ($9.99 direct)</li>
+          </ul>
+        </div>
+        <div class="callout callout--down">
+          <h4>Where It Falls Short</h4>
+          <ul>
+            <li>Foam head goes floppy after sixty seconds on a hot grate</li>
+            <li>Pad ripping on first use is a documented and recurring failure</li>
+            <li>ArmorTec mesh sheds metal fibers under stress</li>
+            <li>Cold-water bucket setup adds friction to every clean</li>
+            <li>Hardware loosens (scraper screws, clamp on the spongy part)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-line"><strong>Bottom line:</strong> Best-marketed brush in the category. Fastest-failing one in the test.</div>
+
+      <div class="cta-wrap">
+        <a class="cta" href="https://www.amazon.com/Scrub-Daddy-Grill-Brush-BBQ/dp/B09SVK9YBB/ref=sr_1_3" target="_blank" rel="noopener nofollow sponsored">Check Price on Amazon →</a>
+      </div>
+    </article>
+
+    <!-- ===== #5 Weber Cold Clean ===== -->
+    <article class="product" id="weber-cold-clean">
+      <span class="product__rank">#5 — If You Got the Recall Replacement</span>
+      <h2 class="product__name">Weber 18" Cold Cleaning Brush (Model 3400714)</h2>
+      <p class="product__line">The brush most readers got in the mail for free. Honest about what it is. Not what most grillers actually need.</p>
+
+      <img class="img--product" src="images/weber-brush.jpeg" alt="Weber 18-inch nylon Cold Cleaning Brush with three-sided red bristle T-head">
+
+      <div class="product__grade">
+        <div class="grade-badge"><span class="grade-badge__label">Our Grade</span><span class="grade-badge__value grade-badge__value--grade">C+</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Score</span><span class="grade-badge__value grade-badge__value--score">5.8</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Rating</span><span class="grade-badge__value grade-badge__value--stars">★★★</span></div>
+      </div>
+      <div class="product__price-row">
+        <span><strong>Price:</strong> $12.99 retail (free for recall claimants)</span>
+        <span><strong>Where:</strong> weber.com, Home Depot, Lowe's, Ace, Amazon</span>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Power</th><td>Manual (cold grates only)</td></tr>
+          <tr><th>Head Material</th><td>Heavy-duty nylon, three-sided T-head</td></tr>
+          <tr><th>Length</th><td>18"</td></tr>
+          <tr><th>Replacement Heads</th><td>None (single-piece consumable)</td></tr>
+          <tr><th>Warranty</th><td>1-year limited</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="section-label">Our Take</h3>
+      <div class="product__sub">
+        <p>If you owned one of the recalled Weber wire-bristle brushes, you've probably already received this one in the mail. Weber is shipping the Cold Cleaning Brush free to anyone who submits a recall claim, and millions of these have gone out since the February 2026 CPSC action. There's a good chance the brush you're holding right now came in a box with a Weber logo on it.</p>
+        <p>Credit where it's due. <strong>The bristles are genuinely thick and bright red, which makes them visible if one ever sheds onto a grate.</strong> They're stiffer than the standard nylon brushes you'd find at a hardware store, and they don't shed in normal use. AmazingRibs awarded the brush a Gold Medal after a side-by-side test, noting that the heavy-duty nylon "worked surprisingly well." The three-sided T-head reaches between grates from multiple angles in a single pass. As a free remedy for a category-wide safety problem, this is more than the bare minimum.</p>
+
+        <h4>Where It Goes Wrong</h4>
+        <p><strong>One: Cold grates only.</strong> The brush is rated for cool surfaces, full stop. Use it on a hot grate and the nylon melts. <strong>That means a 30-plus minute cooldown wait before every cleaning.</strong> For most grillers, the post-cookout brushing-while-hot habit is twenty years deep, and the cooldown breaks the entire workflow. You finish cooking, you want to clean, the grill is too hot, you walk away, the grill cools, you forget. The brush sits in the holder.</p>
+        <p><strong>Two: The handle flexes.</strong> When you press hard to remove baked-on residue (which you'll need to do, because cold grates are harder to clean), the stem bends. You lose leverage exactly when you need it most. Multiple weber.com reviewers say the same thing in slightly different words: when you push hard, the brush gives, and you end up scrubbing harder for longer.</p>
+        <p><strong>Three: It doesn't actually replace the wire brush.</strong> This is the part Weber's marketing is too polite to say. <strong>The most positive reviews on Weber's own site describe a two-tool workflow.</strong> One reviewer at weber.com explicitly wrote that he uses a wire brush right after taking food off the grill, and switches to the Cold Cleaning Brush only after the grates have cooled. That is a five-star review describing a user who is still using the recalled brush type. The recall remedy is a half-replacement.</p>
+        <p><strong>Bottom line:</strong> Take the free replacement. Use it for routine post-cooldown cleaning. Plan on owning a second brush for everything else. If you're buying a brush new, this isn't the one.</p>
+      </div>
+
+      <h3 class="section-label">What It's Actually Like to Own</h3>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> First clean took longer than expected because I had to wait for the grate to cool.</li>
+        <li><strong>Week 2:</strong> Started skipping cleans because the cooldown wait killed the post-cookout window.</li>
+        <li><strong>Week 3:</strong> Handle flexing became noticeable on heavy buildup.</li>
+        <li><strong>Week 4:</strong> Caught myself reaching for an old wire brush after a particularly greasy cook. Realized I'd done exactly what the weber.com reviewers said they did.</li>
+        <li><strong>Week 6:</strong> Brush still works as designed. The design is the issue.</li>
+      </ul>
+
+      <h3 class="section-label">What Buyers Actually Say</h3>
+      <p class="quotes-intro">From the Weber Cold Clean reviews, paraphrased (real reviews, consolidated):</p>
+      <ul class="quotes">
+        <li>"Like this brush for cleaning grates after they cool. I use the wire one right after taking food off."</li>
+        <li>"Cleaning a grill grate when cold makes no sense. Harder to get food off, more elbow grease."</li>
+        <li>"The stem isn't rigid. Press hard to scrub and it bends."</li>
+        <li>"Don't buy if you have porcelain-coated grates. The metal center wire reaches through the bristles."</li>
+        <li>"If this is the best Weber engineers can come up with, I'd look for another brand."</li>
+      </ul>
+
+      <h3 class="section-label">Performance Scores</h3>
+      <div class="score-grid">
+        <div class="score-row" style="--score: 5.5"><span class="score-label">Cleaning Power</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">5.5</span></div>
+        <div class="score-row" style="--score: 4.0"><span class="score-label">Effort Required</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">4.0</span></div>
+        <div class="score-row" style="--score: 4.0"><span class="score-label">Time Per Clean</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">4.0</span></div>
+        <div class="score-row" style="--score: 6.0"><span class="score-label">Surface Versatility</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.0</span></div>
+        <div class="score-row" style="--score: 6.5"><span class="score-label">Build Quality</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.5</span></div>
+        <div class="score-row" style="--score: 7.5"><span class="score-label">Value Over 3 Years</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">7.5</span></div>
+      </div>
+
+      <div class="callouts">
+        <div class="callout callout--up">
+          <h4>What We Liked</h4>
+          <ul>
+            <li>Free for recall claimants</li>
+            <li>Bright red bristles are visible if one sheds</li>
+            <li>Heavy-duty nylon doesn't shed in normal use</li>
+            <li>Three-sided T-head reaches between grates</li>
+            <li>1-year limited warranty (rare for a brush at this price)</li>
+          </ul>
+        </div>
+        <div class="callout callout--down">
+          <h4>Where It Falls Short</h4>
+          <ul>
+            <li>Cold grates only; forces a 30+ minute cooldown wait before every cleaning</li>
+            <li>Handle flexes under pressure (loses leverage on heavy buildup)</li>
+            <li>Most positive reviews describe a two-tool workflow that includes a wire brush</li>
+            <li>Can scratch porcelain-coated grates if the bristles compress and the center wire reaches through</li>
+            <li>No replaceable head; one-piece consumable</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-line"><strong>Bottom line:</strong> A free brush for cold grates. Useful in the role it's designed for. Not the brush most grillers actually need for the job they actually do.</div>
+
+      <div class="cta-wrap">
+        <a class="cta" href="https://www.homedepot.com/p/Weber-18-in-BBQ-Grill-Cleaner-Brush-for-Cold-Cleaning-3400714/332846872#see-more-details" target="_blank" rel="noopener nofollow sponsored">Check Price at Home Depot →</a>
+      </div>
+    </article>
+
+    <!-- ===== #6 GRILLART ===== -->
+    <article class="product" id="grillart">
+      <span class="product__rank">#6 — Avoid</span>
+      <h2 class="product__name">GRILLART 18" Bristle-Free Triple Scrubber (BR-8115)</h2>
+      <p class="product__line">A solid mechanical idea undone by what the brand admits in its own fine print.</p>
+
+      <img class="img--product" src="images/grill-art.jpeg" alt="GRILLART 18-inch triple scrubber grill brush with woven stainless wire and dual scrapers">
+
+      <div class="product__grade">
+        <div class="grade-badge"><span class="grade-badge__label">Our Grade</span><span class="grade-badge__value grade-badge__value--grade">C−</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Score</span><span class="grade-badge__value grade-badge__value--score">5.5</span></div>
+        <div class="grade-badge"><span class="grade-badge__label">Rating</span><span class="grade-badge__value grade-badge__value--stars">★★★</span></div>
+      </div>
+      <div class="product__price-row">
+        <span><strong>Price:</strong> $22.47</span>
+        <span><strong>Where:</strong> Amazon, grillartus.com</span>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>Power</th><td>Manual</td></tr>
+          <tr><th>Head Material</th><td>Triple-row woven stainless steel wire on steel pipe</td></tr>
+          <tr><th>Length</th><td>17.5" (marketed as 18")</td></tr>
+          <tr><th>Replacement Heads</th><td>None (replace whole unit)</td></tr>
+          <tr><th>Warranty</th><td>None formally published</td></tr>
+          <tr><th>Scrapers</th><td>Two (flat + removable U-shape)</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="section-label">Our Take</h3>
+      <div class="product__sub">
+        <p>GRILLART's triple-row brush has a real design idea behind it. <strong>Three rows of woven stainless wire genuinely cover more grate per stroke than the single-row brushes most people grew up using.</strong> The dual scrapers (a flat one welded to the head and a removable U-shape held by a wing nut) are sturdy and well-thought-out. The handle is solid. The hanging ring works. As a piece of mechanical engineering, this is a more thoughtful brush than most of the cheap options at the hardware store.</p>
+        <p>The execution is where it falls apart.</p>
+
+        <h4>Where It Goes Wrong</h4>
+        <p><strong>One: The brand admits the failure mode in its own listing.</strong> Read the fine print on GRILLART's product page: <em>"All grill brushes wear out eventually, use a damp cloth to wipe grill grates, preventing bristles from being left behind."</em> That is the manufacturer telling you that pieces of the brush head can come off, and that you should plan a second cleaning step to mitigate it. <strong>A brush that requires you to do a second cleaning step to mitigate the failure mode of the first one is a brush that hasn't actually solved the problem.</strong> When the brand's own listing tells you to bring a damp cloth, the brand is telling you what it isn't telling you.</p>
+        <p><strong>Two: The bristles bend.</strong> Multiple reviewers report wires flattening within one to two uses. Forum users on TVWBB report coil breakage at the curved transitions during vigorous cleaning. My test unit showed visible bristle deformation by week four. <strong>The triple-row geometry that gives it the marketing edge is also what makes it fragile.</strong> Three rows means more wires under stress per stroke, and the woven attachment doesn't distribute that stress as well as the brand claims.</p>
+        <p><strong>Three: No replacement head.</strong> When the bristles flatten or a coil snaps, you throw the whole brush away and buy another one. For a $22 product on a roughly one-season replacement cycle, that's the same total cost as a $65 brush with replaceable heads. You also get the bonus of contributing an entire steel-and-plastic assembly to a landfill every spring.</p>
+        <p><strong>Four: It doesn't fit narrower grates.</strong> Weber Spirit owners and several kamado-grill users in the review pool reported that the wire loops are too close together for their bar spacing. The brush works on wide-bar gas-grill grates and stops working on anything narrower.</p>
+        <p><strong>Bottom line:</strong> A decent design idea wrapped around build-quality problems the brand acknowledges in its own fine print. There are better-built brushes at this price point and better-engineered ones above it.</p>
+      </div>
+
+      <h3 class="section-label">What It's Actually Like to Own</h3>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> Solid first impression. Triple-row coverage was real, scrapers worked.</li>
+        <li><strong>Week 2:</strong> Noticed wire flattening on the leading edge.</li>
+        <li><strong>Week 3:</strong> First coil snap during a hard scrub. Stopped using full pressure.</li>
+        <li><strong>Week 4:</strong> Visible bristle deformation across the head. Functional but noticeably less effective.</li>
+        <li><strong>Week 6:</strong> Still cleaning. Quality has degraded enough that I'd retire it before another season.</li>
+      </ul>
+
+      <h3 class="section-label">What Buyers Actually Say</h3>
+      <p class="quotes-intro">From the GRILLART reviews, paraphrased (real reviews, consolidated):</p>
+      <ul class="quotes">
+        <li>"Cleans the grill well. No brush pieces in your food."</li>
+        <li>"Cuts cleaning time in half compared to a single-row brush. Triple coverage is real."</li>
+        <li>"After one or two uses the bristles were bent. Not strong enough."</li>
+        <li>"Loops are too close together for my Weber Spirit grates. Doesn't fit."</li>
+        <li>"Back to a regular bristle brush for tough cleaning."</li>
+      </ul>
+
+      <h3 class="section-label">Performance Scores</h3>
+      <div class="score-grid">
+        <div class="score-row" style="--score: 6.5"><span class="score-label">Cleaning Power</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.5</span></div>
+        <div class="score-row" style="--score: 4.5"><span class="score-label">Effort Required</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">4.5</span></div>
+        <div class="score-row" style="--score: 6.0"><span class="score-label">Time Per Clean</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">6.0</span></div>
+        <div class="score-row" style="--score: 5.5"><span class="score-label">Surface Versatility</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">5.5</span></div>
+        <div class="score-row" style="--score: 5.5"><span class="score-label">Build Quality</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">5.5</span></div>
+        <div class="score-row" style="--score: 4.5"><span class="score-label">Value Over 3 Years</span><span class="score-bar"><span class="score-bar__fill"></span></span><span class="score-value">4.5</span></div>
+      </div>
+
+      <div class="callouts">
+        <div class="callout callout--up">
+          <h4>What We Liked</h4>
+          <ul>
+            <li>Triple-row geometry covers more grate per stroke</li>
+            <li>Two scrapers included (flat and U-shape)</li>
+            <li>Sturdy handle, hangable ring</li>
+            <li>Low entry price</li>
+          </ul>
+        </div>
+        <div class="callout callout--down">
+          <h4>Where It Falls Short</h4>
+          <ul>
+            <li>Brand's own fine print warns to wipe grates with a damp cloth after use (manufacturer admission)</li>
+            <li>Wires flatten within 1-2 uses for many buyers</li>
+            <li>Coils break at curved transitions under pressure</li>
+            <li>No replacement head; throw the whole unit when it wears out</li>
+            <li>Doesn't fit narrower grates (Weber Spirit owners report this)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-line"><strong>Bottom line:</strong> A design idea you can respect, with build issues the brand admits in fine print. Skip this one for something that lasts.</div>
+
+      <div class="cta-wrap">
+        <a class="cta" href="https://www.amazon.com/GRILLART-Accessories-Bristles-Scrubbers-BR-8115/dp/B07R2D4ZFL/ref=sr_1_3" target="_blank" rel="noopener nofollow sponsored">Check Price on Amazon →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========================= COMPARISON TABLE ========================= -->
+<section class="compare section--gray">
+  <div class="container">
+    <div class="rankings__head">
+      <span class="eyebrow">Side-by-Side</span>
+      <h2>Quick Comparison Table</h2>
+      <p>The six contenders across the criteria that actually matter.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Brush</th>
+            <th>Price</th>
+            <th>Effort Required</th>
+            <th>Time Per Clean</th>
+            <th>3-Year Cost</th>
+            <th>Used Past Week 3?</th>
+            <th>Hot Grate Capable</th>
+            <th>Editor Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="featured">
+            <th>GrillMaster Pro</th>
+            <td>$64.90</td>
+            <td>✅ Hands-off (motor)</td>
+            <td>~60 sec</td>
+            <td>~$95</td>
+            <td>✅ Yes, every week</td>
+            <td>✅ Yes</td>
+            <td><strong>9.7 / 10</strong></td>
+          </tr>
+          <tr>
+            <th>Grillbot</th>
+            <td>$144.95</td>
+            <td>✅ Walk-away</td>
+            <td>~10-30 min cycle</td>
+            <td>~$280</td>
+            <td>⚠️ Yes, partial clean</td>
+            <td>❌ 250°F max</td>
+            <td>7.6 / 10</td>
+          </tr>
+          <tr>
+            <th>Grill Rescue</th>
+            <td>$39.95-$72.99</td>
+            <td>❌ Manual scrub</td>
+            <td>~3-4 min</td>
+            <td>~$130</td>
+            <td>⚠️ Twice, then drawer</td>
+            <td>✅ Yes (rated 600°F)</td>
+            <td>7.2 / 10</td>
+          </tr>
+          <tr>
+            <th>BBQ Daddy</th>
+            <td>$14.99-$36.99</td>
+            <td>❌ Manual scrub</td>
+            <td>~3-5 min</td>
+            <td>~$120</td>
+            <td>❌ Replaced by week 4</td>
+            <td>⚠️ Foam softens after 60 sec</td>
+            <td>6.5 / 10</td>
+          </tr>
+          <tr>
+            <th>Weber Cold Clean</th>
+            <td>$12.99 (free w/ recall)</td>
+            <td>❌ Manual + 30 min cooldown</td>
+            <td>~3-5 min + cooldown</td>
+            <td>~$40</td>
+            <td>⚠️ Kept the wire brush too</td>
+            <td>❌ Cold only</td>
+            <td>5.8 / 10</td>
+          </tr>
+          <tr>
+            <th>GRILLART BR-8115</th>
+            <td>$22.47</td>
+            <td>❌ Manual scrub</td>
+            <td>~4-5 min</td>
+            <td>~$65</td>
+            <td>❌ Bristles bent by week 3</td>
+            <td>✅ Yes</td>
+            <td>5.5 / 10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">Scroll horizontally on mobile to view all columns. Editor Score is weighted across all six testing criteria.</p>
+  </div>
+</section>
+
+<!-- ========================= WHY THIS MATTERS ========================= -->
+<section class="why">
+  <div class="container">
+    <div class="prose">
+      <span class="eyebrow">Why This Matters</span>
+      <h2>Why Most Grillers Don't Clean Their Grill, And Why It Matters More Than You Think</h2>
+      <p>You probably already know this part, but it's worth saying out loud.</p>
+      <p>Most grillers don't clean their grill as often as they should. Not because they don't care, and not because they don't know better. Because cleaning a grill is a chore, and the brush most of them own makes it more of a chore than it needs to be. <strong>Effort is the variable.</strong> When the tool removes the effort, the cleaning happens. When the tool adds steps (water buckets, cooldown waits, multi-pass scrubbing), the cleaning gets postponed. And then postponed again.</p>
+      <p>The category has spent two decades arguing about bristle material. Wire vs coil vs nylon vs steam vs aramid foam. Every one of those debates assumes the user is going to scrub. None of them change whether you actually do. The variable that determines whether your grill stays clean isn't what the cleaning surface is made of. It's whether the tool you own makes cleaning easy enough that you bother.</p>
+      <p>There's also the buildup-adds-flavor thing, which I want to take a minute on because it's the most common rationalization I hear from grillers who haven't cleaned their grates in months.</p>
+      <p><strong>It doesn't add flavor.</strong> Old grease creates bitterness, not flavor. The carbonized layer that sits on a long-uncleaned grate breaks down under heat into the polycyclic aromatic hydrocarbons (PAHs) and heterocyclic amines (HCAs) that the National Cancer Institute lists among the actual carcinogenic risks of grilled meat. The flavor story is folklore. The chemistry runs the other way. A clean grate cooks better-tasting food and a measurably less risky one.</p>
+      <p>A footnote on bristle safety, because the recall is the reason a lot of you are reading this. Stainless steel and traditional wire bristles are usually the same material. The difference between safer and less-safe brushes isn't the metal. <strong>It's the engineering of how the cleaning surface is mounted.</strong> When you're shopping a brush, the question to ask is how the head is attached. Material is a marketing variable. Mount is the safety variable. Don't over-think it past that.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= BUYING GUIDE ========================= -->
+<section class="guide section--gray">
+  <div class="container">
+    <div class="rankings__head">
+      <span class="eyebrow">Buying Guide</span>
+      <h2>What to Look For (and What to Avoid)</h2>
+    </div>
+
+    <div class="guide-cards">
+      <div class="guide-card guide-card--up">
+        <h3>What Actually Matters</h3>
+        <ul>
+          <li><strong>Hands-off operation.</strong> Does the brush ask your shoulder to do the work, or does it do the work for you? This is the single biggest predictor of whether you'll still be using the brush six months from now.</li>
+          <li><strong>Time per clean, including setup.</strong> The clock starts when you open the grill lid, not when you start scrubbing. Water buckets, charging time, cooldown waits, head swaps, and bucket dunking all count.</li>
+          <li><strong>Surface compatibility.</strong> A brush that works on stainless but scratches porcelain is a half-purchase. The good ones handle stainless, cast iron, and porcelain-coated grates plus a griddle.</li>
+          <li><strong>Total cost over three years.</strong> Sticker price plus replacement heads plus replacement batteries plus the next brush when this one breaks. The cheap brush is rarely the cheap brush.</li>
+          <li><strong>Whether buyers are still using it past the first month.</strong> Read the 6-month and 1-year reviews, not the first-cookout ones. The first-cookout reviews are everyone. The 6-month reviews are the ones who didn't quit.</li>
+        </ul>
+      </div>
+      <div class="guide-card guide-card--down">
+        <h3>What to Walk Away From</h3>
+        <ul>
+          <li>Brushes that require a 30-minute cooldown wait before every cleaning. The cooldown is the friction. The friction is why you don't clean.</li>
+          <li>Steam brushes with fine-print disclaimers telling you to wipe the grate down with a damp cloth afterward. If the brush needs a second cleaning step to mitigate the first one, the brush hasn't actually solved the safety problem.</li>
+          <li>Brushes whose foam pad goes floppy within sixty seconds of contact with a hot grate. The first cookout will feel great and the second one will feel like scrubbing with a wet sponge.</li>
+          <li>Multi-step assembly brushes. Every screw is a future failure mode and every clamp is a future loose part.</li>
+          <li>Brushes whose review pages contain the phrase "I keep my old wire brush around for the tough jobs." That is a one-star review wearing a five-star sticker.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FAQ ========================= -->
+<section class="faq">
+  <div class="container">
+    <div class="faq__head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq__list">
+      <div class="faq__item">
+        <h3 class="faq__q">Will an electric brush actually do better than a manual one?</h3>
+        <div class="faq__a">
+          <p>Yes, on the metric that matters: how often you actually use it. The mechanical cleaning result is comparable to a good manual brush, but the lower friction means you reach for it after every cook instead of every fourth. A clean grate every week beats a perfectly-scrubbed grate every fourth week.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">How often should I really be cleaning my grill?</h3>
+        <div class="faq__a">
+          <p>After every use, ideally. The buildup oxidizes between cooks and gets exponentially harder to remove the longer you wait. Weekly is the realistic minimum if you grill more than once a week. The honest version of "I clean my grill regularly" for most grillers is "every fourth or fifth time, and not as well as I should."</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">Does the GrillMaster Pro work on cold grates?</h3>
+        <div class="faq__a">
+          <p>Yes. The motor doesn't care about grate temperature. I tested cold, warm, and hot grates across stainless, cast iron, and porcelain-coated surfaces. Hot grates are slightly faster because the residual heat softens grease, but the motor handles cold buildup without complaint.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">Is bristle-free actually safer?</h3>
+        <div class="faq__a">
+          <p>Sometimes, depending on what the head is made of and how it's attached. The category has been arguing about material for a decade while the actual safety variable is attachment method. Coil brushes can shed circular pieces of wire. Mesh brushes shed strands. Foam-pad brushes can leave aramid fibers. The cleanest answer is to ask any brush manufacturer how the cleaning surface is mounted, and walk away from any brand that won't tell you.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">Does old buildup add flavor?</h3>
+        <div class="faq__a">
+          <p>No. Rancid grease produces bitterness and the PAH and HCA compound families the National Cancer Institute lists among the carcinogenic risks of grilled meat. The "seasoning the grates" story is folklore that doesn't survive food science. A clean grate cooks better-tasting food.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">How long does the GrillMaster Pro battery last per charge?</h3>
+        <div class="faq__a">
+          <p>Approximately 90 minutes of continuous run time. In practice, I cleaned six grates and a griddle on a single charge with battery still showing. Full recharge from empty is roughly 3 hours via USB-C. Most users will charge overnight and forget about it.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">Can I use it on porcelain-coated grates?</h3>
+        <div class="faq__a">
+          <p>Yes. The GrillMaster Pro is safe on stainless, cast iron, porcelain-coated grates, and Blackstone griddle surfaces. The motorized rotation does the work without the lateral pressure that scratches porcelain coatings, and the included scouring pad roller is the gentler option if your grates are sensitive. I saw no surface marking across six weeks of testing.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <h3 class="faq__q">What's the warranty if it fails?</h3>
+        <div class="faq__a">
+          <p>The GrillMaster Pro ships with a 30-day satisfaction guarantee plus a 1-year warranty on defective items. If it fails inside that window, Vahrelo's US-based customer support replaces it. That's a more complete warranty path than any of the cheaper brushes in this test.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= VERDICT ========================= -->
+<section class="verdict">
+  <div class="container">
+    <div class="prose">
+      <span class="eyebrow">Our Verdict</span>
+      <h2>The Verdict</h2>
+      <p>I've been reviewing BBQ gear for over twenty years. I've owned almost every brush on this list at one point or another. And I can tell you honestly that until the GrillMaster Pro, I accepted that grill cleaning was a chore the tool couldn't fix. I assumed that's just how it was.</p>
+      <p>It isn't.</p>
+      <p>The category has been solving the wrong problem for two decades. Bristle material, attachment safety, scratch resistance, steam mechanisms, mesh weaves, aramid fibers. <strong>Every one of those debates assumes the user will scrub.</strong> Most grillers I know don't, not consistently. Not because they don't care. Because cleaning a grill with the wrong tool is a chore, and the brush they own is the wrong tool.</p>
+      <p>The GrillMaster Pro is the first brush I've tested that solves the actual problem. <strong>It removes the labor.</strong> When the tool removes the labor, the cleaning happens. The cadence I have been failing to maintain for two decades is now automatic, because the friction is gone. That is the entire review.</p>
+      <p><strong>If you're buying your first grill brush:</strong> start here. You will be tempted by the $22 GRILLART because it has thousands of reviews, and you'll end up replacing it next year and trying again. Skip the loop.</p>
+      <p><strong>If you've already been through two or three brushes:</strong> this is the one that ends the cycle. The reason your last three didn't get used past week three is the same reason mine didn't. Buy the tool that fixes the reason.</p>
+      <p><strong>If you grill weekly and want to actually keep your grates clean:</strong> the GrillMaster Pro is the only brush in this test where I'm confident saying it'll be in your kitchen rotation a year from now, not in your garage.</p>
+    </div>
+
+    <!-- Top pick callout -->
+    <div class="top-pick">
+      <span class="top-pick__pin">Our Top Pick</span>
+      <a class="product__img-link product__img-link--top-pick" href="https://vahrelo.com/products/vahrelo-grillmaster-pro™" target="_blank" rel="noopener" aria-label="View the Vahrelo GrillMaster Pro at vahrelo.com">
+        <img class="img--top-pick" src="images/product-grillmaster-pro.jpeg" alt="Vahrelo GrillMaster Pro on a clean grill">
+      </a>
+      <h2>GrillMaster Pro</h2>
+      <p class="top-pick__line">The only brush in the test that gets used past week three.</p>
+      <a class="cta cta--green cta--top-pick" href="https://vahrelo.com/products/vahrelo-grillmaster-pro™" target="_blank" rel="noopener">Check Latest Price at Vahrelo →</a>
+      <span class="top-pick__meta">Free shipping over $70 · 30-day satisfaction guarantee · 1-year warranty</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= AUTHOR ========================= -->
+<section style="padding: 24px 0 56px;">
+  <div class="container">
+    <div class="author">
+      <img class="img--author" src="images/author-jeremy-culter.png" alt="Jeremy Culter, Senior BBQ Gear Reviewer">
+      <div class="author__body">
+        <h3>About the Author — Jeremy Culter</h3>
+        <p class="author__role">Senior BBQ Gear Reviewer</p>
+        <p>Jeremy has been reviewing BBQ gear for over two decades, with a focus on grills, smokers, and outdoor cooking accessories. He lives in Austin, Texas with three grills, a 23-cubic-foot offset smoker, and an opinionated cat. He has consulted for three competitive barbecue circuits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Editorial Policy</a>
+      <a href="#">How We Test</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </nav>
+    <p class="footer__disclosure">Affiliate disclosure: This site is reader-supported. Some links on this page are affiliate links, which means we may earn a small commission if you purchase after clicking, at no extra cost to you. Our rankings, testing, and editorial judgment are independent of whether a product has an affiliate program. We only recommend products we would buy for our own grills.</p>
+    <p class="footer__copyright">© 2026 grillgearinsider.com. All rights reserved. Product images and trademarks belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Score → color tier (used for the rating bars)
+  function scoreColor(s) {
+    if (s >= 9.0) return '#1E5E2A'; // darkest green
+    if (s >= 8.0) return '#2F7A3F'; // dark green
+    if (s >= 7.0) return '#5BA653'; // green
+    if (s >= 6.0) return '#E89F47'; // orange
+    if (s >= 5.0) return '#D97706'; // deep orange
+    return '#DC2626';               // red
+  }
+
+  // Letter grade → color tier (A green, B green, C orange, C− red)
+  function gradeColor(g) {
+    g = g.trim().replace(/[−—–]/g, '-').toUpperCase();
+    if (g === 'A+') return '#1E5E2A';
+    if (g === 'A' || g === 'A-') return '#2F7A3F';
+    if (g === 'B+' || g === 'B') return '#5BA653';
+    if (g === 'B-') return '#7DB852';
+    if (g === 'C+') return '#E89F47';
+    if (g === 'C') return '#D97706';
+    if (g === 'C-') return '#DC2626';
+    if (g.charAt(0) === 'D' || g.charAt(0) === 'F') return '#B91C1C';
+    return '#5BA653';
+  }
+
+  document.querySelectorAll('.score-row').forEach(function (row) {
+    var s = parseFloat(row.style.getPropertyValue('--score'));
+    var fill = row.querySelector('.score-bar__fill');
+    if (fill && !isNaN(s)) fill.style.background = scoreColor(s);
+  });
+
+  document.querySelectorAll('.grade-badge__value--grade').forEach(function (el) {
+    el.style.background = gradeColor(el.textContent);
+  });
+})();
+</script>
+
+</body>
+</html>
