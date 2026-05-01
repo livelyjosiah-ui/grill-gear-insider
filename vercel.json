@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/top-6-brushes-of-2026", "destination": "/index.html" },
+    { "source": "/top-6-brushes-of-2026/", "destination": "/index.html" }
+  ]
+}
