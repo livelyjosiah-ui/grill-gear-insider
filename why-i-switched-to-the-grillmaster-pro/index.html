@@ -157,6 +157,19 @@ img.hero__byline-avatar {
   display: block;
 }
 
+/* ============ Breadcrumb ============ */
+.breadcrumb {
+  max-width: var(--max-card);
+  margin: 0 auto;
+  padding: 18px 20px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--text); }
+.breadcrumb__sep { margin: 0 8px; color: #cfd3d8; }
+.breadcrumb__current { color: var(--text); }
+
 /* ============ Top nav ============ */
 .topnav {
   position: sticky;
@@ -253,8 +266,6 @@ img.hero__byline-avatar {
 
 /* ============ Intro ============ */
 .post__intro { padding: 16px 20px 8px; }
-.post__intro p:first-child { font-size: 19px; line-height: 1.7; }
-@media (min-width: 640px) { .post__intro p:first-child { font-size: 21px; } }
 
 /* ============ Reason sections ============ */
 .reason { padding: 40px 20px; }
@@ -300,12 +311,16 @@ img.hero__byline-avatar {
   -webkit-tap-highlight-color: transparent;
 }
 .btn--cta {
-  background: var(--cta-navy);
+  background: #6BB559;
   color: white;
   width: 100%;
   max-width: 420px;
+  box-shadow: 0 4px 14px rgba(91,166,83,0.18);
 }
-.btn--cta:hover { background: var(--cta-navy-hover); }
+.btn--cta:hover {
+  background: var(--brand-green);
+  box-shadow: 0 10px 24px rgba(91,166,83,0.28);
+}
 .closing__cta-wrap {
   margin-top: 32px;
   text-align: center;
@@ -384,6 +399,10 @@ img.hero__byline-avatar {
       <li><a href="/">About</a></li>
     </ul>
   </div>
+</nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a><span class="breadcrumb__sep">›</span><a href="/">Reviews</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">Why I Switched to the GrillMaster Pro</span>
 </nav>
 
 <main>
