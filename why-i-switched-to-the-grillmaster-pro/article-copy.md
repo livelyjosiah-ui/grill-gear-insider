@@ -45,19 +45,7 @@ A cleanup that used to take me twenty minutes takes about three. The first time 
 
 ---
 
-## Reason 2 — It actually gets every corner. Not just where the bristles can reach.
-
-Flat brushes only clean the top of the grate. The sides, the underside, the corners where the rod meets the frame. You get most of that on a good day, but the grease bakes onto the parts you skip until eventually you're scraping it off with a putty knife in March.
-
-The head on this one rotates 180 degrees and wraps the grate as it goes. You're cleaning the top, the sides, and the underside in a single pass. **You don't realize how much you were missing until you see what comes off.**
-
-I used it on the inside of my hood the same way you'd use a regular bristle brush. Same head. No extra attachment.
-
-> Image slot: before/after split of a grate, or a close-up of the rotating head wrapped around a grate rod.
-
----
-
-## Reason 3 — You'll actually clean after every cookout. Without making it a thing.
+## Reason 2 — You'll actually clean after every cookout. Without making it a thing.
 
 Most grillers don't clean their grates as often as they know they should. I was one of them. I told myself I was busy. The truth is the brush made it a chore, and the chore made me skip it.
 
@@ -66,6 +54,18 @@ When the tool is easy, you stop avoiding it. Pull it off the wall, run it across
 The cadence fix wasn't discipline. It was a better tool.
 
 > Image slot: brush on its charging stand or hanging on a hook next to the grill.
+
+---
+
+## Reason 3 — It actually gets every corner. Not just where the bristles can reach.
+
+Flat brushes only clean the top of the grate. The sides, the underside, the corners where the rod meets the frame. You get most of that on a good day, but the grease bakes onto the parts you skip until eventually you're scraping it off with a putty knife in March.
+
+The head on this one rotates 180 degrees and wraps the grate as it goes. You're cleaning the top, the sides, and the underside in a single pass. **You don't realize how much you were missing until you see what comes off.**
+
+I used it on the inside of my hood the same way you'd use a regular bristle brush. Same head. No extra attachment.
+
+> Image slot: before/after split of a grate, or a close-up of the rotating head wrapped around a grate rod.
 
 ---
 
@@ -83,15 +83,13 @@ A clean grate gives you proper sear marks, no off-flavors, and meat that tastes 
 
 Quick safety note, then I'll move on. You probably saw the headlines back in February when about 3.2 million Weber wire-bristle brushes got recalled. Bristles snapping off, ending up on the grate, ending up in someone's mouth. I'd been quietly worried about that for years. The thing nobody tells you is that "stainless" and "wire" are basically the same metal. The fix was never about the material. **It was always about how the bristles are attached so they can't come off.** Vahrelo calls it SafeCore. I call it the brush I don't think about anymore.
 
-> Image slot: macro of the SafeCore head showing the bristle anchor / mount detail.
-
 ---
 
-## Reason 6 — I bought the brush once. The head pops off for $14.90.
+## Reason 6 — I bought the brush once. Two new heads cost $14.90.
 
-Here's the part that sealed it for me. The brush charges over USB-C, the head is dishwasher-safe, and when the bristles wear out you swap the head for $14.90 instead of buying a whole new brush. I've already replaced one head. The brush itself is the same one I started with.
+Here's the part that sealed it for me. The brush charges over USB-C and the heads are dishwasher-safe. When the bristles wear out you grab a replacement pack. **For $14.90 you get a brand new stainless steel brush head and a brillo pad head in the same box.** One pack, two cleaning surfaces, way less than the cost of a new brush.
 
-Add up what I was spending on a $20 brush every season for 22 years and the math gets ugly. **This is the last grill brush I'm going to buy.**
+Add up what I was spending on a $20 brush every season for 22 years and the math gets ugly. The brush itself is the same one I started with. **This is the last grill brush I'm going to buy.**
 
 > Image slot: replacement head pack next to the main unit, or close-up of the head detaching.
 
