@@ -97,7 +97,7 @@ Add up what I was spending on a $20 brush every season for 22 years and the math
 
 ## Reason 7 — I had 30 days to change my mind. I didn't need them.
 
-Vahrelo runs a 30-day satisfaction guarantee on every order. That's the only reason I was willing to try a $65 grill brush in the first place. If it didn't change the way I cleaned, I was sending it back.
+Vahrelo runs a 30-day satisfaction guarantee on every order. That's the only reason I was willing to try a $69 grill brush in the first place. If it didn't change the way I cleaned, I was sending it back.
 
 I didn't send it back. **I bought a second one for my brother-in-law's house.**
 
