@@ -1,6 +1,6 @@
-# Why I Switched to the GrillMaster Pro After 22 Years of Grilling
+# 7 Reasons I Switched to GrillMaster Pro After 22 Years of Grilling
 
-*Seven reasons I'm not going back to the brushes in my drawer.*
+*The brushes in my drawer aren't coming back out.*
 
 **Author:** Jeremy Culter, Senior BBQ Gear Reviewer
 **Updated:** May 2026
@@ -15,7 +15,7 @@
 
 ## H1
 
-Why I switched to the GrillMaster Pro after 22 years of grilling
+7 reasons why I switched to GrillMaster Pro after 22 years of grilling
 
 ## Byline
 
